@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 
-token = "ODIzMjcwMTc5NjkyNzQwNjE4.YFeYGg.mu_r3F8ICdDOpHV4N3HEuymWcPE"
+token = "ODIzMjcwMTc5NjkyNzQwNjE4.YFeYGg.JqOTFK6FjEzBIQwaCv-E9rg3z3Q"
 
 client = commands.Bot(command_prefix = '/' )
 
