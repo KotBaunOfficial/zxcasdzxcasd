@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import asyncio
+import os
 
 token = "ODIzMjcwMTc5NjkyNzQwNjE4.YFeYGg.JqOTFK6FjEzBIQwaCv-E9rg3z3Q"
 
@@ -13,4 +14,6 @@ async def clear( ctx, amount : int ):
     await ctx.channel.purge( limit = int(amount) )
     await ctx.send('Работаю я тут за тебя, а ты...', delete_after= 4.0)
 
-client.run(token)
+token = os.envrion.get('BOT_TOKEN')
+
+client.run(str(token))
